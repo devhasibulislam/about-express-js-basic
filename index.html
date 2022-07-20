@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload | Multer middleware</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(45deg, #758283, #cbd0d1);
+        }
+
+        #upload {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 2px 3px 5px .5px rgba(255, 255, 255, 0.75);
+            -webkit-box-shadow: 2px 3px 5px .5px rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 2px 3px 5px .5px rgba(255, 255, 255, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <form action="http://localhost:3000/" method="post" enctype="multipart/form-data" id="upload">
+            <!-- <input type="file" name="avatar" multiple> -->
+            <!-- <input type="file" name="avatar">
+                <input type="file" name="gallery" multiple> -->
+            <!-- <input type="file" name="name"> -->
+            <input type="file" name="avatar">
+            <br>
+            <br>
+            <input type="file" name="document">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
