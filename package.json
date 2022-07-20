@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-basic",
+  "version": "1.0.0",
+  "description": "learn about express js from basic to advance",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "production": "NODE_ENV=production nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasibul Islam",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
+  }
+}
